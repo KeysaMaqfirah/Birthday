@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun Sahabatku!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Floating Elements -->
+    <div class="floating-element">🎈</div>
+    <div class="floating-element">🎊</div>
+    <div class="floating-element">⭐</div>
+    <div class="floating-element">🎁</div>
+    <div class="floating-element">🌟</div>
+    <div class="floating-element">💫</div>
+    
+    <!-- Page 1: Welcome -->
+    <div class="page page1 active">
+        <div class="welcome-content">
+            <h1 class="welcome-title">Hai Sahabatku! ✨</h1>
+            <p class="welcome-subtitle">Ada sesuatu yang spesial untukmu hari ini...</p>
+            <button class="start-btn" onclick="nextPage()">Mulai Petualangan! 🚀</button>
+        </div>
+    </div>
+    
+    <!-- Page 2: Countdown -->
+    <div class="page page2">
+        <div class="countdown-content">
+            <h2 class="countdown-title">Bersiap-siap untuk...</h2>
+            <div class="countdown-circle">
+                <div class="countdown-number" id="countdownNumber">3</div>
+            </div>
+            <p class="countdown-text">Sesuatu yang luar biasa!</p>
+        </div>
+    </div>
+    
+    <!-- Page 3: Celebration -->
+    <div class="page page3">
+        <div class="celebration-content">
+            <h1 class="big-title">SELAMAT ULANG TAHUN!</h1>
+            <div class="celebration-icons">
+                <div class="celebration-icon" onclick="createBurst(this)">🎂</div>
+                <div class="celebration-icon" onclick="createBurst(this)">🎉</div>
+                <div class="celebration-icon" onclick="createBurst(this)">🥳</div>
+                <div class="celebration-icon" onclick="createBurst(this)">🎊</div>
+            </div>
+            <button class="next-btn" onclick="nextPage()">Lanjut ke Kartu Ucapan 💌</button>
+        </div>
+    </div>
+    
+    <!-- Page 4: Birthday Card -->
+    <div class="page page4">
+        <div class="birthday-card">
+            <div class="cake-animation">🎂✨</div>
+            <div class="birthday-message">
+                Untuk sahabat terbaik yang selalu ada di saat suka dan duka,
+                <br><br>
+                Semoga di hari istimewa ini, Tuhan memberikan yang terbaik untukmu. 
+                Semoga semua impian dan cita-citamu terwujud, 
+                dan kebahagiaan selalu menyertai langkahmu.
+                <br><br>
+                Terima kasih sudah menjadi sahabat yang luar biasa! 
+                Selamat bertambah umur! 🎈
+            </div>
+            <div class="signature">Dengan cinta, Sahabatmu 💖</div>
+            <br>
+            <button class="next-btn" onclick="nextPage()">Ada Kejutan Lagi! 🎁</button>
+        </div>
+    </div>
+    
+    <!-- Page 5: Final Surprise -->
+    <div class="page page5">
+        <div class="surprise-content">
+            <h1 class="surprise-title">KEJUTAN TERAKHIR!</h1>
+            <div class="gift-box" onclick="finalSurprise()">🎁</div>
+            <p class="final-message">Klik kotak hadiah untuk kejutan spesial!</p>
+            <button class="restart-btn" onclick="restartShow()">Ulangi Lagi 🔄</button>
+        </div>
+    </div>
+    
+    <!-- Navigation Dots -->
+    <div class="nav-dots">
+        <div class="nav-dot active" onclick="goToPage(0)"></div>
+        <div class="nav-dot" onclick="goToPage(1)"></div>
+        <div class="nav-dot" onclick="goToPage(2)"></div>
+        <div class="nav-dot" onclick="goToPage(3)"></div>
+        <div class="nav-dot" onclick="goToPage(4)"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
